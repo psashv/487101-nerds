@@ -5,8 +5,147 @@
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
-
+    <header class="site-header">
+      <h1 class="visually-hidden">Nerds - дизайн студия</h1>
+      <nav class="site-header__navigation">
+        <a class="site-header__logo">
+          <img src="http://placehold.it/160x65">
+        </a>
+        <ul>
+          <li><a href="#">Студия</a></li>
+          <li><a href="#">Клиенты</a></li>
+          <li><a href="catalog.html">Магазин</a></li>
+          <li><a href="#">Контакты</a></li>
+          <li><a href="#">Корзина</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page-main">
+      <section class="page-main__features">
+        <h2 class="visually-hidden">Особенности</h2>
+        <div class="page-main__slider page-main__slider--1">
+          <b>Долго, дорого, скурпулезно.</b>
+          <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+          <a href="#">Узнать больше</a>
+        </div>
+        <div class="page-main__slider page-main__slider--2">
+          <b>Любим математику как никто другой</b>
+          <p>Никакого креатива, только математической формулы для расчета идеальных пропорций.</p>
+          <a href="#">Узнать больше</a>
+        </div>
+        <div class="page-main__slider page-main__slider--3">
+          <b>Только ночь, только хардкор</b>
+          <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+          <a href="#">Узнать больше</a>
+        </div>
+      </section>
+      <section class="services">
+        <h2>Услуги</h2>
+        <div>
+          <h3>Веб-сайты</h3>
+          <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+          <a href="#">Заказать</a>
+        </div>
+        <div>
+          <h3>Приложения</h3>
+          <p>Покорите топ 10 приложений в AppStore и Google Play</p>
+          <a href="#">Заказать</a>
+        </div>
+        <div>
+          <h3>Презентации</h3>
+          <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+          <a href="#">Заказать</a>
+        </div>
+      </section>
+      <section class="about-us">
+        <div>
+          <h2>Мы - маленькая, но гордая дизайн-студия из Краснодара.</h2>
+          <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+          <span>Выполняем заказы на разработку:</span>
+          <ul>
+            <li>Веб-сайтов любой сложности</li>
+            <li>Мобильных приложений для iOS и Android</li>
+            <li>Слайдер и видео для корпоративных презентаций</li>
+          </ul>
+        </div>
+        <div>
+          <img src="http://placehold.it/360x208">
+          <p>С 2004 года любим точнось во всем:</p>
+          <table>
+            <tr>
+              <th>146<sup>%</sup></th>
+              <th>100<sup>%</sup></th>
+              <th>50<sup>%</sup></th>
+            </tr>
+            <tr>
+              <td>Уровень самоотдачи</td>
+              <td>Соблюдение сроков</td>
+              <td>Минимальная предоплата</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+      <section class="links">
+        <h2>Ссылки</h2>
+        <ul>
+          <li>
+            <a href="#">
+              <img src="http://placehold.it/199x68">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="http://placehold.it/209x90">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="http://placehold.it/185x52">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="http://placehold.it/173x84">
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <section class="map">
+        <h2 class="visually-hidden">Map</h2>
+        <img src="http://placehold.it/1440x416">
+        <div>
+          <h3>NЁRDS DESIGN STUDIO</h3>
+          <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <p>тел. +7 (812) 275-75-75</p>
+          <button>Напишите нам</button>
+        </div>
+      </section>
+      <section class="modal">
+        <h2>Напишите нам</h2>
+        <p>
+          <span>Ваше имя:</span>
+          <span>Ваш e-mail:</span>
+        </p>
+        <p>
+          Текст письма:
+        </p>
+        <p>Отправить</p>
+      </section>
+      <section class="social">
+        <div>
+          <ul>
+            <li><a href="https://vk.com">Вконтакте</a></li>
+            <li><a href="https://facebook.com">Фейсбук</a></li>
+            <li><a href="https://instagram.com">Инстаграмм</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Давайте дружить, это выгодно!</h2>
+          <span>Скидка 10% для друзей из социальных сетей.</span>
+        </div>
+      </section>
+    </footer>
   </body>
 </html>
