@@ -262,8 +262,9 @@ a {
 /* catalog.hmtl */
 
 .button--grey {
-  background-color: #eeeeee;
   color: #000000;
+
+  background-color: #eeeeee;
 }
 
 .button--grey:hover {
@@ -271,8 +272,9 @@ a {
 }
 
 .button--grey:active {
-  background-color: #d5d5d5;
   color: rgba(0, 0, 0, 0.3);
+
+  background-color: #d5d5d5;
 }
 
 .button--text-white:active {
