@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="site-header">
@@ -13,7 +16,7 @@
         <ul class="site-navigation__main">
           <li><a href="#">Студия</a></li>
           <li><a href="#">Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
+          <li><a>Магазин</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
         <a class="site-navigation__basket-link" href="#">Корзина</a>
@@ -23,15 +26,14 @@
     <main class="main-catalog">
       <section class="filters">
         <h2 class="visually-hidden">Фильтры товаров</h2>
-        <form class="filters__form" action="https://echo.htmlacademy.ru" method="post">
+        <form action="https://echo.htmlacademy.ru" method="post">
           <fieldset>
             <legend>Стоимость</legend>
-            <label class="visually-hidden" for="cost">Цена</label>
             <p>От 0 До 15000</p>
           </fieldset>
           <fieldset>
             <legend>Сетка:</legend>
-            <ul>
+            <ul class="filters-list">
               <li>
                 <label>
                   <input type="radio" name="grid" value="adaptive" checked>
@@ -54,7 +56,7 @@
           </fieldset>
           <fieldset>
             <legend>Особенности:</legend>
-            <ul>
+            <ul class="filters-list">
               <li>
                 <label>
                   <input type="checkbox" name="slider" checked>
@@ -87,7 +89,7 @@
               </li>
             </ul>
           </fieldset>
-          <input type="submit" value="Показать">
+          <input class="button button--grey" type="submit" value="Показать">
         </form>
       </section>
       <div class="container">
@@ -103,15 +105,15 @@
         </section>
         <section class="products">
           <h2 class="visually-hidden">Продукты</h2>
-          <ul class="products__list">
+          <ul>
             <li class="products__item">
               <img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona">
               <div>
-                <a href="#">
+                <a class="products__link-name" href="#">
                   <h3>Sedona</h3>
                 </a>
                 <p>Информационный сайт для туристов</p>
-                <a class="button" href="#">9 900 руб.</a>
+                <a class="button button--text-white" href="#">9 900 руб.</a>
               </div>
             </li>
             <li class="products__item">
@@ -121,7 +123,7 @@
                   <h3>Pink App</h3>
                 </a>
                 <p>Продуктовый лендинг приложений для iOS И Android</p>
-                <a class="button" href="#">9 900 руб.</a>
+                <a class="button button--text-white" href="#">9 900 руб.</a>
               </div>
             </li>
             <li class="products__item">
@@ -134,7 +136,7 @@
                   Сайт салона красоты.<br/>
                   Для мужчин, да.
                 </p>
-                <a class="button" href="#">9 900 руб.</a>
+                <a class="button button--text-white" href="#">9 900 руб.</a>
               </div>
             </li>
             <li class="products__item">
@@ -144,7 +146,7 @@
                   <h3>Mishka</h3>
                 </a>
                 <p>Интернет-магазин вязаных игрушек</p>
-                <a class="button" href="#">9 900 руб.</a>
+                <a class="button button--text-white" href="#">9 900 руб.</a>
               </div>
             </li>
             <li class="products__item">
@@ -154,7 +156,7 @@
                   <h3>A Plus</h3>
                 </a>
                 <p>Лендинг курсов повышения квалификации</p>
-                <a class="button" href="#">9 900 руб.</a>
+                <a class="button button--text-white" href="#">9 900 руб.</a>
               </div>
             </li>
             <li class="products__item">
@@ -164,15 +166,15 @@
                   <h3>Кваст</h3>
                 </a>
                 <p>Промо-сайт производителя крафтового кваса</p>
-                <a class="button" href="#">9 900 руб.</a>
+                <a class="button button--text-white" href="#">9 900 руб.</a>
               </div>
             </li>
           </ul>
           <ul class="page-number">
-            <li><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">Следующая</a></li>
+            <li><a class="button button--grey" href="#">1</a></li>
+            <li><a class="button button--grey" href="#">2</a></li>
+            <li><a class="button button--grey" href="#">3</a></li>
+            <li><a class="button button--grey" href="#">Следующая</a></li>
           </ul>
         </section>
       </div>
@@ -191,8 +193,8 @@
           <p>
             <label for="user-name">Ваше имя:</label>
             <input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
-            <label for="user-email">Ваше имя:</label>
-            <input id="user-email" type="text" name="email" placeholder="email@example.com">
+            <label for="user-email">Ваш email:</label>
+            <input id="user-email" type="email" name="email" placeholder="email@example.com">
           </p>
           <p>
             <label for="user-letter">Текст письма:</label>
