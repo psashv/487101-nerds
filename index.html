@@ -14,13 +14,15 @@
         <a>
           <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип компании Nerds">
         </a>
-        <ul class="site-navigation__main">
-          <li><a href="#">Студия</a></li>
-          <li><a href="#">Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-        <a class="site-navigation__basket-link" href="#">Корзина</a>
+        <div class="container-nav">
+          <ul class="site-navigation__main">
+            <li><a href="#">Студия</a></li>
+            <li><a href="#">Клиенты</a></li>
+            <li><a href="catalog.html">Магазин</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+          <a class="basket-link" href="#">Корзина</a>
+        </div>
       </nav>
     </header>
     <main class="page-main">
@@ -173,9 +175,21 @@
       </section>
       <div class="social container">
         <ul>
-          <li><a href="https://vk.com" aria-label="Мы в Вконтакте">Вконтакте</a></li>
-          <li><a href="https://facebook.com" aria-label="Мы в Фейсбуке">Фейсбук</a></li>
-          <li><a href="https://instagram.com" aria-label="Мы в Инстаграме">Инстаграм</a></li>
+          <li>
+            <a href="https://vk.com" aria-label="Мы в Вконтакте">
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://facebook.com" aria-label="Мы в Фейсбуке">
+              <span class="visually-hidden">Фейсбук</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://instagram.com" aria-label="Мы в Инстаграме">
+              <span class="visually-hidden">Инстаграм</span>
+            </a>
+          </li>
         </ul>
         <div>
           <b>Давайте дружить, это выгодно!</b>
