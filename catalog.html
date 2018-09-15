@@ -8,29 +8,34 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="site-header">
-      <nav class="site-navigation">
-        <a class="site-navigation__logo" href="index.html" aria-label="Переход на главную страницу">
-          <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип компании Nerds">
+    <header class="site-header catalog-header">
+      <nav class="site-navigation container">
+        <a href="index.html">
+          <img class="logo" src="img/nerds-logo.svg" width="160" height="65" alt="Логотип компании Nerds">
         </a>
         <ul class="site-navigation__main">
           <li><a href="#">Студия</a></li>
           <li><a href="#">Клиенты</a></li>
-          <li><a class="site-navigation__current">Магазин</a></li>
+          <li><a>Магазин</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
         <a class="site-navigation__basket-link" href="#">Корзина</a>
       </nav>
-      <h1>Магазин готовых шаблонов</h1>
+      <h1 class="container">Магазин готовых шаблонов</h1>
     </header>
-    <main class="main-catalog">
+    <main class="main-catalog container">
       <section class="filters">
         <h2 class="visually-hidden">Фильтры товаров</h2>
+        <div class="slider">
+          <p>Стоимость</p>
+          <div>
+            <!-- Здесь будет слайдер -->
+          </div>
+          <div>
+            От 0 До 15000
+          </div>
+        </div>
         <form action="https://echo.htmlacademy.ru" method="post">
-          <fieldset>
-            <legend>Стоимость</legend>
-            <p>От 0 До 15000</p>
-          </fieldset>
           <fieldset>
             <legend>Сетка:</legend>
             <ul class="filters-list">
@@ -92,7 +97,7 @@
           <input class="button button--grey" type="submit" value="Показать">
         </form>
       </section>
-      <div class="container">
+      <div class="container-2">
         <section class="sorting">
           <h2>Сортировать</h2>
           <ul>
@@ -113,7 +118,7 @@
         </section>
         <section class="products">
           <h2 class="visually-hidden">Продукты</h2>
-          <ul>
+          <ul class="products__list">
             <li class="products__item">
               <img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona">
               <div>
@@ -121,7 +126,7 @@
                   <h3>Sedona</h3>
                 </a>
                 <p>Информационный сайт для туристов</p>
-                <a class="button button--text-white" href="#">9 900 руб.</a>
+                <a class="button price" href="#">9 900 руб.</a>
               </div>
             </li>
             <li class="products__item">
@@ -188,19 +193,19 @@
         </section>
       </div>
     </main>
-    <footer class="site-footer">
+    <footer class="site-footer catalog-footer">
       <img src="img/map.png" width="1440" height="416" alt="Наш офис на карте">
-      <section class="site-footer__contacts">
+      <section class="contacts">
         <h2>NЁRDS DESIGN STUDIO</h2>
         <p>
           191186, Санкт-Петербург,<br>
-           ул. Б. Конюшенная, д. 19/8
+            ул. Б. Конюшенная, д. 19/8
         </p>
         <p>тел. +7 (812) 275-75-75</p>
         <a class="button" href="#">Напишите нам</a>
       </section>
-      <section class="site-footer__modal">
-        <form class="site-footer__form" action="https://echo.htmlacademy.ru" method="post">
+      <section class="modal">
+        <form action="https://echo.htmlacademy.ru" method="post">
           <h2>Напишите нам</h2>
           <p>
             <label for="user-name">Ваше имя:</label>
@@ -216,14 +221,12 @@
         </form>
         <button class="modal-close" type="button" aria-label="Закрыть окно">Закрыть</button>
       </section>
-      <div class="site-footer__bottom">
-        <div>
-          <ul>
-            <li><a href="https://vk.com" aria-label="Мы в Вконтакте">Вконтакте</a></li>
-            <li><a href="https://facebook.com" aria-label="Мы в Фейсбуке">Фейсбук</a></li>
-            <li><a href="https://instagram.com" aria-label="Мы в Инстаграме">Инстаграм</a></li>
-          </ul>
-        </div>
+      <div class="social container">
+        <ul>
+          <li><a href="https://vk.com" aria-label="Мы в Вконтакте">Вконтакте</a></li>
+          <li><a href="https://facebook.com" aria-label="Мы в Фейсбуке">Фейсбук</a></li>
+          <li><a href="https://instagram.com" aria-label="Мы в Инстаграме">Инстаграм</a></li>
+        </ul>
         <div>
           <b>Давайте дружить, это выгодно!</b>
           <p>Скидка 10% для друзей из социальных сетей.</p>

@@ -10,7 +10,7 @@
   <body>
     <header class="site-header">
       <h1 class="visually-hidden">Nerds - дизайн студия</h1>
-      <nav class="site-navigation">
+      <nav class="site-navigation container">
         <a>
           <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип компании Nerds">
         </a>
@@ -24,24 +24,30 @@
       </nav>
     </header>
     <main class="page-main">
-      <section class="page-main__features">
+      <section class="features">
         <h2 class="visually-hidden">Особенности</h2>
-        <div>
-          <h3>Долго, дорого, скурпулезно.</h3>
-          <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-          <a class="button" href="#">Узнать больше</a>
+        <div class="features__item container">
+          <div>
+            <h3>Долго, дорого, скурпулезно.</h3>
+            <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+            <a class="button" href="#">Узнать больше</a>
+          </div>
         </div>
-        <div>
-          <h3>Любим математику как никто другой</h3>
-          <p>Никакого креатива, только математической формулы для расчета идеальных пропорций.</p>
-          <a class="button" href="#">Узнать больше</a>
+        <div class="features__item container">
+          <div>
+            <h3>Любим математику как никто другой</h3>
+            <p>Никакого креатива, только математической формулы для расчета идеальных пропорций.</p>
+            <a class="button" href="#">Узнать больше</a>
+          </div>
         </div>
-        <div>
-          <h3>Только ночь, только хардкор</h3>
-          <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-          <a class="button" href="#">Узнать больше</a>
+        <div class="features__item container">
+          <div>
+            <h3>Только ночь, только хардкор</h3>
+            <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+            <a class="button" href="#">Узнать больше</a>
+          </div>
         </div>
-        <ul class="page-main__switches">
+        <ul class="features__switches">
           <li>
             <button class="slide-btn" type="button">Первый слайд</button>
           </li>
@@ -53,30 +59,37 @@
           </li>
         </ul>
       </section>
-      <section class="services">
+      <section class="services container">
         <h2 class="visually-hidden">Услуги</h2>
         <ul>
           <li>
-            <h3>Веб-сайты</h3>
             <img src="img/illustration-1.png" width="300" height="146" alt="Веб-сайт на экране монитора">
-            <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-            <a class="button" href="#">Заказать</a>
+            <div>
+              <h3>Веб-сайты</h3>
+              <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+              <a class="button" href="#">Заказать</a>
+            </div>
           </li>
           <li>
-            <h3>Приложения</h3>
             <img src="img/illustration-2.png" width="300" height="146" alt="2 смартфона с приложениями на экране">
-            <p>Покорите топ 10 приложений в AppStore и Google Play</p>
-            <a class="button button--green" href="#">Заказать</a>
+            <div>
+              <h3>Приложения</h3>
+              <p>Покорите топ 10 приложений в AppStore и Google Play</p>
+              <a class="button button--green" href="#">Заказать</a>
+            </div>
           </li>
           <li>
-            <h3>Презентации</h3>
             <img src="img/illustration-3.png" width="300" height="146" alt="Презентация на доске">
-            <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-            <a class="button button--yellow" href="#">Заказать</a>
+            <div>
+              <h3>Презентации</h3>
+              <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+              <a class="button button--yellow" href="#">Заказать</a>
+            </div>
           </li>
         </ul>
       </section>
-      <section class="about-us">
+      <!-- Здесь будет линия -->
+      <section class="about-us container">
         <h2 class="visually-hidden">О нас</h2>
         <div class="about-us__left-column">
           <b>Мы - маленькая, но гордая дизайн-студия из Краснодара.</b>
@@ -88,21 +101,22 @@
             <li>Слайдер и видео для корпоративных презентаций</li>
           </ul>
         </div>
-        <table class="about-us__table">
-          <caption>С 2004 года любим точнось во всем:</caption>
-          <tr class="about-us__table-top">
-            <td>146<sup>%</sup></td>
-            <td>100<sup>%</sup></td>
-            <td>50<sup>%</sup></td>
-          </tr>
-          <tr class="about-us__table-bottom">
-            <td>Уровень самоотдачи</td>
-            <td>Соблюдение сроков</td>
-            <td>Минимальная предоплата</td>
-          </tr>
-        </table>
+        <div class="about-us__right-column">
+          <p>С 2004 года любим точнось во всем:</p>
+          <ul class="about-us__table-top">
+            <li>146<sup>%</sup></li>
+            <li>100<sup>%</sup></li>
+            <li>50<sup>%</sup></li>
+          </ul>
+          <ul class="about-us__table-bottom">
+            <li>Уровень самоотдачи</li>
+            <li>Соблюдение сроков</li>
+            <li>Минимальная предоплата</li>
+          </ul>
+        </div>
       </section>
-      <section class="partners">
+      <!-- Здесь будет линия -->
+      <section class="partners container">
         <h2 class="visually-hidden">Наши Партнеры</h2>
         <ul>
           <li>
@@ -127,48 +141,47 @@
           </li>
         </ul>
       </section>
+      <!-- Здесь будет линия -->
     </main>
     <footer class="site-footer">
-        <img src="img/map.png" width="1440" height="416" alt="Наш офис на карте">
-        <section class="site-footer__contacts">
-          <h2>NЁRDS DESIGN STUDIO</h2>
+      <img src="img/map.png" width="1440" height="416" alt="Наш офис на карте">
+      <section class="contacts">
+        <h2>NЁRDS DESIGN STUDIO</h2>
+        <p>
+          191186, Санкт-Петербург,<br>
+            ул. Б. Конюшенная, д. 19/8
+        </p>
+        <p>тел. +7 (812) 275-75-75</p>
+        <a class="button" href="#">Напишите нам</a>
+      </section>
+      <section class="modal">
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <h2>Напишите нам</h2>
           <p>
-            191186, Санкт-Петербург,<br>
-             ул. Б. Конюшенная, д. 19/8
+            <label for="user-name">Ваше имя:</label>
+            <input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+            <label for="user-email">Ваш email:</label>
+            <input id="user-email" type="email" name="email" placeholder="email@example.com">
           </p>
-          <p>тел. +7 (812) 275-75-75</p>
-          <a class="button" href="#">Напишите нам</a>
-        </section>
-        <section class="site-footer__modal">
-          <form class="site-footer__form" action="https://echo.htmlacademy.ru" method="post">
-            <h2>Напишите нам</h2>
-            <p>
-              <label for="user-name">Ваше имя:</label>
-              <input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
-              <label for="user-email">Ваш email:</label>
-              <input id="user-email" type="email" name="email" placeholder="email@example.com">
-            </p>
-            <p>
-              <label for="user-letter">Текст письма:</label>
-              <textarea id ="user-letter" name="letter" placeholder="В свободной форме"></textarea>
-            </p>
-            <input class="button" type="submit" value="Отправить">
-          </form>
-          <button class="modal-close" type="button" aria-label="Закрыть окно">Закрыть</button>
-        </section>
-        <div class="site-footer__bottom">
-          <div>
-            <ul>
-              <li><a href="https://vk.com" aria-label="Мы в Вконтакте">Вконтакте</a></li>
-              <li><a href="https://facebook.com" aria-label="Мы в Фейсбуке">Фейсбук</a></li>
-              <li><a href="https://instagram.com" aria-label="Мы в Инстаграме">Инстаграм</a></li>
-            </ul>
-          </div>
-          <div>
-            <b>Давайте дружить, это выгодно!</b>
-            <p>Скидка 10% для друзей из социальных сетей.</p>
-          </div>
+          <p>
+            <label for="user-letter">Текст письма:</label>
+            <textarea id ="user-letter" name="letter" placeholder="В свободной форме"></textarea>
+          </p>
+          <input class="button" type="submit" value="Отправить">
+        </form>
+        <button class="modal-close" type="button" aria-label="Закрыть окно">Закрыть</button>
+      </section>
+      <div class="social container">
+        <ul>
+          <li><a href="https://vk.com" aria-label="Мы в Вконтакте">Вконтакте</a></li>
+          <li><a href="https://facebook.com" aria-label="Мы в Фейсбуке">Фейсбук</a></li>
+          <li><a href="https://instagram.com" aria-label="Мы в Инстаграме">Инстаграм</a></li>
+        </ul>
+        <div>
+          <b>Давайте дружить, это выгодно!</b>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
         </div>
-      </footer>
+      </div>
+    </footer>
   </body>
 </html>
