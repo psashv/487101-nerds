@@ -13,13 +13,17 @@
         <a href="index.html">
           <img class="logo" src="img/nerds-logo.svg" width="160" height="65" alt="Логотип компании Nerds">
         </a>
-        <ul class="site-navigation__main">
-          <li><a href="#">Студия</a></li>
-          <li><a href="#">Клиенты</a></li>
-          <li class="current"><a>Магазин</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-        <a class="site-navigation__basket-link" href="#">Корзина</a>
+        <div class="container-nav">
+          <ul class="site-navigation__main">
+            <li class="line-nav"><a href="#">Студия</a></li>
+            <li class="line-nav"><a href="#">Клиенты</a></li>
+            <li class="line-nav active"><a class="nav-current">Магазин</a></li>
+            <li class="line-nav"><a href="#">Контакты</a></li>
+          </ul>
+          <div class="basket line-nav--basket">
+            <a class="basket-link" href="#">Корзина</a>
+          </div>
+        </div>
       </nav>
       <h1 class="container">Магазин готовых шаблонов</h1>
     </header>
@@ -99,20 +103,16 @@
       </section>
       <div class="container-2">
         <section class="sorting">
-          <h2>Сортировать</h2>
+          <h2>Сортировать:</h2>
           <ul>
-            <li><a href="#">По цене</a></li>
+            <li><a class="active">По цене</a></li>
             <li><a href="#">По типу</a></li>
             <li><a href="#">По названию</a></li>
-            <li>
-              <a>
-                <img src="img/icon-down-dir-2.svg" width="11" height="10" alt="По убыванию">
-              </a>
+            <li class="icon icon-down icon-down--current">
+              <a><span class="visually-hidden">По убыванию</span></a>
             </li>
-            <li>
-              <a class="sorting__casual" href="#">
-                <img src="img/icon-up-dir.svg" width="11" height="10" alt="По возрастанию">
-              </a>
+            <li class="icon icon-up icon-casual">
+              <a class="sorting__casual" href="#"><span class="visually-hidden">По убыванию</span></a>
             </li>
           </ul>
         </section>
@@ -158,7 +158,7 @@
                 <a class="products__link-name" href="#">
                   <h3>Mishka</h3>
                 </a>
-                <p>Интернет-магазин вязаных игрушек</p>
+                <p>Интернет-магазин<br> вязаных игрушек</p>
                 <a class="button price" href="#">9 900 руб.</a>
               </div>
             </li>
@@ -185,61 +185,65 @@
           </ul>
           <ul class="page-number">
             <!-- Добавить рамки активному элементу -->
-            <li><a class="button button--grey page-number__item--active" href="#">1</a></li>
+            <li><a class="button button--grey active">1</a></li>
             <li><a class="button button--grey" href="#">2</a></li>
             <li><a class="button button--grey" href="#">3</a></li>
-            <li><a class="button button--grey" href="#">Следующая</a></li>
+            <li><a class="button button--grey button-next" href="#">Следующая</a></li>
           </ul>
         </section>
       </div>
     </main>
     <footer class="site-footer catalog-footer">
       <img src="img/map.png" width="1440" height="416" alt="Наш офис на карте">
-      <section class="contacts">
-        <h2>NЁRDS DESIGN STUDIO</h2>
-        <p>
-          191186, Санкт-Петербург,<br>
+      <div class="container-map container">
+        <section class="contacts">
+          <h2>NЁRDS DESIGN STUDIO</h2>
+          <p>
+            191186, Санкт-Петербург,<br>
             ул. Б. Конюшенная, д. 19/8
-        </p>
-        <p>тел. +7 (812) 275-75-75</p>
-        <a class="button" href="#">Напишите нам</a>
-      </section>
-      <section class="modal">
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <h2>Напишите нам</h2>
-          <p>
-            <label for="user-name">Ваше имя:</label>
-            <input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
-            <label for="user-email">Ваш email:</label>
-            <input id="user-email" type="email" name="email" placeholder="email@example.com">
           </p>
-          <p>
-            <label for="user-letter">Текст письма:</label>
-            <textarea id ="user-letter" name="letter" placeholder="В свободной форме"></textarea>
-          </p>
-          <input class="button" type="submit" value="Отправить">
-        </form>
-        <button class="modal-close" type="button" aria-label="Закрыть окно">Закрыть</button>
-      </section>
+          <p>тел. +7 (812) 275-75-75</p>
+          <a class="button" href="#">Напишите нам</a>
+        </section>
+      </div>
+      <div class="modal-container">
+        <section class="modal visually-hidden">
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <h2>Напишите нам</h2>
+            <p>
+              <label for="user-name">Ваше имя:</label>
+              <input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+              <label for="user-email">Ваш email:</label>
+              <input id="user-email" type="email" name="email" placeholder="email@example.com">
+            </p>
+            <p>
+              <label for="user-letter">Текст письма:</label>
+              <textarea id ="user-letter" name="letter" placeholder="В свободной форме"></textarea>
+            </p>
+            <input class="button" type="submit" value="Отправить">
+          </form>
+          <button class="modal-close" type="button" aria-label="Закрыть окно">Закрыть</button>
+        </section>
+      </div>
       <div class="social container">
         <ul>
           <li>
-            <a href="https://vk.com" aria-label="Мы в Вконтакте">
+            <a class="social-link social-vk" href="https://vk.com" aria-label="Мы в Вконтакте">
               <span class="visually-hidden">Вконтакте</span>
             </a>
           </li>
           <li>
-            <a href="https://facebook.com" aria-label="Мы в Фейсбуке">
+            <a class="social-link social-fb" href="https://facebook.com" aria-label="Мы в Фейсбуке">
               <span class="visually-hidden">Фейсбук</span>
             </a>
           </li>
           <li>
-            <a href="https://instagram.com" aria-label="Мы в Инстаграме">
+            <a class="social-link social-insta" href="https://instagram.com" aria-label="Мы в Инстаграме">
               <span class="visually-hidden">Инстаграм</span>
             </a>
           </li>
         </ul>
-        <div>
+        <div class="social-text">
           <b>Давайте дружить, это выгодно!</b>
           <p>Скидка 10% для друзей из социальных сетей.</p>
         </div>
