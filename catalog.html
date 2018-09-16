@@ -32,11 +32,15 @@
         <h2 class="visually-hidden">Фильтры товаров</h2>
         <div class="slider">
           <p>Стоимость</p>
-          <div>
-            <!-- Здесь будет слайдер -->
+          <div class="slider-block">
+            <div class="slider-left"></div>
+            <div class="slider-right"></div>
           </div>
-          <div>
-            От 0 До 15000
+          <div class="slider-count">
+            От 
+            <button class="slider-btn">0</button>
+            До 
+            <button class="slider-btn">15000</button>
           </div>
         </div>
         <form action="https://echo.htmlacademy.ru" method="post">
@@ -45,19 +49,19 @@
             <ul class="filters-list">
               <li>
                 <label>
-                  <input class="visually-hidden" type="radio" name="grid" value="adaptive" checked>
+                  <input type="radio" name="grid" value="adaptive" checked>
                   Адаптивная
                 </label>
               </li>
               <li>
                 <label>
-                  <input class="visually-hidden" type="radio" name="grid" value="fixed">
+                  <input type="radio" name="grid" value="fixed">
                   Фиксированная
                 </label>
               </li>
               <li>
                 <label>
-                  <input class="visually-hidden" type="radio" name="grid" value="rubber">
+                  <input type="radio" name="grid" value="rubber">
                   Резиновая
                 </label>
               </li>
@@ -68,31 +72,31 @@
             <ul class="filters-list">
               <li>
                 <label>
-                  <input class="visually-hidden" type="checkbox" name="slider" checked>
+                  <input type="checkbox" name="slider" checked>
                   Слайдер
                 </label>
               </li>
               <li>
                 <label>
-                  <input class="visually-hidden" type="checkbox" name="advantages">
+                  <input type="checkbox" name="advantages">
                   Блок преимуществ
                 </label>
               </li>
               <li>
                 <label>
-                  <input class="visually-hidden" type="checkbox" name="news" checked>
+                  <input type="checkbox" name="news" checked>
                   Новости
                 </label>
               </li>
               <li>
                 <label>
-                  <input class="visually-hidden" type="checkbox" name="gallery">
+                  <input type="checkbox" name="gallery">
                   Галерея
                 </label>
               </li>
               <li>
                 <label>
-                  <input class="visually-hidden" type="checkbox" name="basket">
+                  <input type="checkbox" name="basket">
                   Корзина
                 </label>
               </li>
@@ -184,7 +188,6 @@
             </li>
           </ul>
           <ul class="page-number">
-            <!-- Добавить рамки активному элементу -->
             <li><a class="button button--grey active">1</a></li>
             <li><a class="button button--grey" href="#">2</a></li>
             <li><a class="button button--grey" href="#">3</a></li>
@@ -210,19 +213,25 @@
         <section class="modal visually-hidden">
           <form action="https://echo.htmlacademy.ru" method="post">
             <h2>Напишите нам</h2>
-            <p>
-              <label for="user-name">Ваше имя:</label>
-              <input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
-              <label for="user-email">Ваш email:</label>
-              <input id="user-email" type="email" name="email" placeholder="email@example.com">
-            </p>
-            <p>
+            <div class="form-top">
+              <div>
+                <label for="user-name">Ваше имя:</label>
+                <input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+              </div>
+              <div>
+                <label for="user-email">Ваш email:</label>
+                <input id="user-email" type="email" name="email" placeholder="email@example.com">
+              </div>
+            </div>
+            <div class="form-bottom">
               <label for="user-letter">Текст письма:</label>
               <textarea id ="user-letter" name="letter" placeholder="В свободной форме"></textarea>
-            </p>
+            </div>
             <input class="button" type="submit" value="Отправить">
           </form>
-          <button class="modal-close" type="button" aria-label="Закрыть окно">Закрыть</button>
+          <button class="modal-close" type="button" aria-label="Закрыть окно">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
         </section>
       </div>
       <div class="social container">

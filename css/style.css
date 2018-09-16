@@ -668,20 +668,51 @@ img {
 
 .modal h2 {
   margin: 0;
+  margin-bottom: 36px;
 
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
 }
 
-.modal p {
-  margin: 0;
+.form-top {
+  display: flex;
+  margin-bottom: 33px;
+}
+
+.form-top div:last-child {
+  margin-left: 40px;
+}
+
+.form-top input {
+  width: 360px;
+  height: 50px;
+  margin-top: 6px;
+  padding-left: 15px;
+
+  background-color: #ffffff;
+  border: solid 2px #d7dcde;
 }
 
 .modal label {
-  font-size: 17.5px;
-  line-height: 17.5px;
+  font-size: 16px;
+  line-height: 18px;
   font-weight: bold;
+}
+
+.form-bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-bottom textarea {
+  width: 760px;
+  height: 118px;
+  margin-top: 6px;
+  padding: 15px;
+
+  background-color: #ffffff;
+  border: solid 2px #d7dcde;
 }
 
 .modal input[type="text"],
@@ -711,6 +742,19 @@ img {
 
 .modal .button {
   width: 260px;
+  margin-top: 47px;
+}
+
+.modal button {
+  position: absolute;
+  top: 78px;
+  right: 90px;
+
+  width: 21px;
+  height: 21px;
+  
+  background: url("../img/close-cross.svg") no-repeat;
+  border: none;
 }
 
 /* end modal */
@@ -719,6 +763,7 @@ img {
 
 .social {
   display: flex;
+  margin-bottom: 77px;
 }
 
 .social ul {
@@ -859,19 +904,45 @@ img {
 }
 
 .slider {
-  height: 265px;
   width: 261px;
-  margin-bottom: 56px;
+  margin-bottom: 53px;
+  padding-top: 54px;
 
   line-height: 22px;
   text-transform: uppercase;
   color: #283136;
-
-  background-color: seagreen;
 }
 
 .slider p {
   margin: 0;
+}
+
+.slider-block {
+  width: 261px;
+  height: 81px;
+  margin-top: 47px;
+  margin-bottom: 15px;
+
+  background-color: #eeeeee;
+}
+
+.slider-count {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slider-btn {
+  width: 80px;
+  height: 38px;
+  
+  background-color: #eeeeee;
+  border: 0;
+  border-radius: 3px;
+}
+
+.slider-btn:last-child {
+  align-self: flex-end;
 }
 
 .filters fieldset {
@@ -884,10 +955,14 @@ img {
 
 .filters legend,
 .slider p {
-  font-size: 17.5px;
-  line-height: 31.5px;
+  font-size: 18px;
+  line-height: 30px;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+.filters legend {
+  margin-bottom: 7px;
 }
 
 .filters-list {
@@ -895,6 +970,14 @@ img {
   padding: 0;
 
   list-style: none;
+}
+
+.filters-list li {
+  margin-bottom: 14px;
+}
+
+.filters-list li:last-child {
+  margin-bottom: 0;
 }
 
 .filters label {
