@@ -338,7 +338,7 @@ img {
 .features p {
   width: 430px;
   margin: 0;
-  margin-bottom: 37px;
+  margin-bottom: 40px;
 
   color: #283136;
 }
@@ -427,11 +427,11 @@ img {
 
 .services h3 {
   margin: 0;
-  margin-top: 20px;
-  margin-bottom: 15px;
+  margin-top: 17px;
+  margin-bottom: 16px;
 
-  font-size: 24.5px;
-  line-height: 31.5px;
+  font-size: 24px;
+  line-height: 30px;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -439,7 +439,7 @@ img {
 .services p {
   width: 260px;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 
   font-size: 16px;
   line-height: 24px;
@@ -470,7 +470,7 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-top: 43px;
-  padding-bottom: 74px;
+  padding-bottom: 69px;
 }
 
 .about-us__left-column {
@@ -495,6 +495,7 @@ img {
 .about-us__left-column h3 {
   margin: 0;
 
+  font-size: 16px;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -536,7 +537,7 @@ img {
   height: 208px;
   content: "";
 
-  background: url("../img/logo-big.png") no-repeat;
+  background: url("../img/nerds-illustration.jpg") no-repeat;
 }
 
 .about-us__right-column p {
@@ -941,6 +942,7 @@ img {
 /* catalog header */
 
 .catalog-header {
+  min-height: 355px;
   padding-bottom: 107px;
 }
 
@@ -949,8 +951,8 @@ img {
 }
 
 .site-header h1 {
-  font-size: 54px;
-  line-height: 54px;
+  font-size: 55px;
+  line-height: 55px;
   font-weight: 500;
   text-align: center;
 }
@@ -987,12 +989,61 @@ img {
 }
 
 .slider-block {
+  position: relative;
+
   width: 261px;
   height: 81px;
   margin-top: 47px;
   margin-bottom: 15px;
 
   background-color: #eeeeee;
+  border-radius: 3px;
+}
+
+.slider-block::after {
+  content: "";
+
+  position: absolute;
+  top: 39px;
+  left: 20px;
+  z-index: 1;
+
+  width: 219px;
+  height: 2px;
+
+  background-color: #d7dcde;
+}
+
+.slider-block::before {
+  content: "";
+
+  position: absolute;
+  top: 39px;
+  left: 20px;
+  z-index: 2;
+
+  width: 152px;
+  height: 2px;
+
+  background-color: #00ca74;
+}
+
+.slider-left,
+.slider-right {
+  position: absolute;
+  top: 29px;
+  left: 18px;
+  z-index: 3;
+
+  width: 20px;
+  height: 23px;
+
+  background: url("../img/filter-button.svg") no-repeat;
+  cursor: pointer;
+}
+
+.slider-right {
+  left: 160px;
 }
 
 .slider-count {
@@ -1023,10 +1074,14 @@ img {
 
 .filters fieldset {
   margin: 0;
-  margin-bottom: 46px;
+  margin-bottom: 44px;
   padding: 0;
 
   border: 0;
+}
+
+.filters .bottom-fieldset {
+  margin-bottom: 47px;
 }
 
 .filters legend,
@@ -1038,7 +1093,7 @@ img {
 }
 
 .filters legend {
-  margin-bottom: 7px;
+  margin-bottom: 14px;
 }
 
 .filters-list {
@@ -1049,7 +1104,7 @@ img {
 }
 
 .filters-list li {
-  margin-bottom: 14px;
+  margin-bottom: 16px;
 }
 
 .filters-list li:last-child {
@@ -1081,12 +1136,13 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
 
-  margin-top: 58px;
+  margin-top: 54px;
   margin-bottom: 52px;
 }
 
 .sorting h2 {
   margin: 0;
+  margin-top: 3px;
 
   font-size: 18px;
   line-height: 18px;
@@ -1266,8 +1322,8 @@ ul.products__list {
   margin-top: 29px;
   margin-bottom: 16px;
 
-  font-size: 17.5px;
-  line-height: 31.5px;
+  font-size: 18px;
+  line-height: 30px;
   font-weight: bold;
   text-transform: uppercase;
 }
